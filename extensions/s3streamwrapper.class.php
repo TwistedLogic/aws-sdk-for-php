@@ -215,6 +215,7 @@ class S3StreamWrapper
 		$region = $client->hostname;
 		$response = $client->create_bucket($bucket, $region, $acl);
 
+		return true;
 		return $response->isOK();
 	}
 
